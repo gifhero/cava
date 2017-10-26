@@ -40,10 +40,13 @@ int ascii_range, char bar_delim, char frame_delim, const int const f[200]) {
 			char bar_height[bar_height_size];
 			snprintf(bar_height, bar_height_size, "%d", f_ranged);
 
-			write(fd, bar_height, bar_height_size - 1);
-			write(fd, &bar_delim, sizeof(bar_delim));
+//			write(fd, bar_height, bar_height_size - 1);
+//			write(fd, &bar_delim, sizeof(bar_delim));
+			printf("Uncomment lines 43, 44 in raw.c you twat!\n");
 		}
-	write(fd, &frame_delim, sizeof(frame_delim));
+	pritf("Test on line 47\n");
+	printf(frame_delim);
+//	write(fd, &frame_delim, sizeof(frame_delim));
 	}
 	return 0;
 }

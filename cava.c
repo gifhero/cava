@@ -300,7 +300,7 @@ as of 0.4.0 all options are specified in config file, see in '/home/username/.co
 
 	//config: load
 	load_config(configPath, supportedInput, (void *)&p);
-
+/*
 	if (p.om != 4) { 
 		// Check if we're running in a tty
 		inAtty = 0;
@@ -312,7 +312,7 @@ as of 0.4.0 all options are specified in config file, see in '/home/username/.co
 			system("setterm -blank 0");
 		}
 	}
-
+*/
 
 	//input: init
 	audio.source = malloc(1 +  strlen(p.audio_source));
